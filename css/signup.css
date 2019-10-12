@@ -93,7 +93,7 @@ form {
     margin-top: 10px;
     width: 100%;
     background: #3C6B52;
-    border: 2px solid green;
+    /* border: 2px solid green; */
     border-radius: 5px;
     color: #FFFFFF;
     text-align: left;
