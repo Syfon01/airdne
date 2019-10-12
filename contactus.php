@@ -25,46 +25,55 @@
 </header>
 
 <body onload="init();">
-    <div>
-        <div class="formContent">
-            <form class="form" action="#" method="post" id="form">
-                <h1>Contact Us</h1>
-                <label for="">Full Name</label>
-                <span id="ErrorName" style="color: red; margin-left: 15px;"> </span>
-                <input type="text" name="name" id="name" placeholder="Your name" required="required" minlength="4"><br>
-                <label for="">Email</label>
-                <span id="ErrorEmail" style="color: red; margin-left: 15px;"> </span>
-                <input type="text" name="email" id="emailaddress" placeholder="Email address" required="required"><br>
-                <span id="ErrorSubject" style="color: red; margin-left: 15px;"> </span>
-                <textarea name="subject" id="subject" placeholder="Leave a message..." minlength="20" style="height: 350px" required="required"></textarea><br>
-                <input type="submit" value="Submit" id="submit"
-            </form>
-        </div>
-        <footer>
-            <p>Copyright © 2019 All rights reserved | Team Ariadne</p>
-        </footer>
-        <script type="text/javascript">
-            //With init() addEventListener can call each variables easily. 
-            function init() {
-                var name = document.getElementById("name");
-                var emailaddress = document.getElementById("emailaddress");
-                var subject = document.getElementById("subject");
-                var form = document.getElementById("form");
-                name.addEventListener("blur", checkName);
-                emailaddress.addEventListener("keyup", checkEmail);
-                form.addEventListener("submit", validateForm);
-            }
-            //To check and validate the value entered.
-            function checkName() {
-                text = document.getElementById("name");
-                if (text.value.length < 4) {
-                    document.getElementById("ErrorName").innerHTML = "Name must be more than 4 char";
-                    text.focus(); //focus() makes sure inputs entered is correct.
-                    return false;
-                } else {
-                    document.getElementById("ErrorName").innerHTML = "";
-                    return true
-                }
+  	<div class="formContent">
+        <form  class="form" action="#" method="post" id="form">
+            <h1>Contact Us</h1>
+            <h3>Got a question? We’d love to hear from you. Send us a message and we’ll respond as soon as possible</h3>
+    
+           
+            <label for="">Full Name</label>
+            <span id="ErrorName" style="color: red; margin-left: 15px;"> </span>                
+            <input type="text" name="name" id="name" placeholder="Your name" required="required" minlength="4"><br>
+            
+            <label for="">Email</label>
+            <span id="ErrorEmail" style="color: red; margin-left: 15px;"> </span>               
+            <input type="text" name="email" id="emailaddress" placeholder="Email address" required="required"><br>
+            <span id="ErrorSubject" style="color: red; margin-left: 15px;"> </span>  
+            
+            <label for="">Phone Number</label>
+            <span id="ErrorNumber" style="color: red; margin-left: 15px;"> </span>                
+            <input type="phone" name="phonenumber" id="phonenumber" placeholder="Phone Number" required="required"><br>
+            
+            <textarea name="subject" id="subject" placeholder="Leave a message..." minlength="20" style="height: 350px" required="required"></textarea><br>
+            <input type="submit" value="Submit" id="submit">
+        </form>
+    </div>
+    <footer>
+        <p>Copyright © 2019 All rights reserved | Team Ariadne</p>
+    </footer>
+    <script type="text/javascript">
+        //With init() addEventListener can call each variables easily. 
+        function init(){
+            var name = document.getElementById("name");
+            var emailaddress = document.getElementById("emailaddress");
+            var subject = document.getElementById("subject");
+            var form = document.getElementById("form");
+            name.addEventListener("blur", checkName);                   
+            emailaddress.addEventListener("keyup", checkEmail);                 
+            form.addEventListener("submit", validateForm);  
+        }
+        //To check and validate the value entered.
+        function checkName(){
+            text = document.getElementById("name");
+            if (text.value.length < 4 ) 
+            {
+                document.getElementById("ErrorName").innerHTML = "Name must be more than 4 char";
+                text.focus();   //focus() makes sure inputs entered is correct.
+                return false;
+            }else
+            {
+                document.getElementById("ErrorName").innerHTML = "";
+                return true
             }
 
             function checkEmail() {
