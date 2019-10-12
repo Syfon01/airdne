@@ -13,7 +13,7 @@
 <?php
 if (isset($_SESSION['login_success'])) {
 echo <<<_END
-        <a href="Index.php">Home</a>
+        <a href="index.php">Home</a>
         <a href="createclass.php">Create Class</a>
         <a href="chooseCourse.html">Choose Course(s)</a>
         <a href="contactus.php">Contact Us</a>
