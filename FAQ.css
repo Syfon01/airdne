@@ -1,0 +1,67 @@
+
+#accordion{
+  margin-top: 5%;
+  margin-right: 18%;
+  margin-left: 18%;
+}
+
+#myTopnav{
+  margin-top: 2%;
+}
+
+#accordion section p{
+  display: none;
+  text-align: center;
+  font-size: 150%;
+  font-family: sans-serif;
+  padding: 0 20px;
+  transition:all 500ms ease;
+}
+
+#accordion section a {
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  font-size: 110%;
+  line-height: 300%;
+  letter-spacing:; 1px;
+}
+
+#accordion section a:hover {
+  text-decoration: underline;
+}
+
+
+#accordion section:target p{
+  display: block;
+}
+
+a#nav{
+  text-decoration: none;
+  float: right;
+  margin-right: 2%;
+  color: #FFA500;
+  font-size: 20px;
+}
+
+h1{
+font-weight: normal;
+padding-top: 2%;
+}
+
+section{
+  box-shadow: 0 2px 25px 0 rgba(110,130,208, .18);
+}
+
+p{
+  background-color: #E8EEFF;
+}
+
+a#contact{
+  border-radius: 2px;
+  border: none;
+  background-color: #FFA500;
+  color: black;
+  text-decoration: none;
+  padding: 1%;
+}

@@ -1,0 +1,306 @@
+.container {
+    /* margin-top: 30px;
+    text-align: center; */
+    border: 1px solid burlywood;
+    
+    color: cadetblue;
+    /* height: 100%; */
+	font-family: Montserrat;
+    /* font-family: 'Courier New', Courier, monospace; */
+    /* width: 1000px; */
+    /* margin-left: 210px; */
+    /* margin-right: 60px; */
+    border-radius: 20px;
+    background-color: white;
+}
+
+table.formtable {
+    /* text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px; */
+}
+
+body {
+    text-align: center;
+    font-weight: 10px;
+}
+
+h1 {
+    color: blue;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#subheader {
+    color: black;
+    font-weight: bold;
+    text-shadow: black;
+}
+
+select,
+th {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    padding-left: 10px;
+}
+
+input {
+    color: darkgray;
+    border-radius: 5px;
+    margin-top: 5px;
+    height: 40px;
+    width: 300px;
+}
+
+::placeholder {
+    text-align: left;
+    opacity: 1;
+}
+
+th {
+    text-align: left;
+    padding-left: 40px;
+    color: black;
+    font-weight: bold;
+}
+
+/* th.headertwo{ not working
+    margin-top: 15px;
+    /* padding-top: 15px;
+} */
+select {
+    widows: 150px;
+}
+
+#enterClassName,
+.subjects,
+.courselevel,
+.exercise,
+.quiz {
+    /* margin-bottom: 25px;
+    width: 300px;
+    height: 40px; */
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input:hover {
+    background: cadetblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+    font-size: 20px;
+    transform: scale(1);
+}
+
+input {
+    font-size: 20px;
+    color: blue;
+}
+
+::placeholder {
+    padding-left: 20px;
+}
+
+.coursegroup {
+    margin-bottom: 25px;
+}
+
+input:invalid,
+select:invalid {
+    border: 2px dashed red;
+}
+
+input:valid {
+    border: 2px solid black;
+}
+
+button#uploadfile {
+    background-color: darkorange;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button#createbutton {
+    background-color: darkorange;
+    /* width: 150px; */
+    /* height: 40px; */
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#createbutton:hover,
+#uploadfile:hover {
+    background-color: #4CAF50;
+}
+
+#createbutton,
+#uploadfile {
+    color: white;
+    font-size: 15px;
+}
+
+input[type="video"] {
+    display: none;
+}
+
+input#fileupload:hover {
+    background-color: #4CAF50;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+input#fileupload {
+    border-radius: 12px;
+}
+
+label {
+    color: blue;
+    font-weight: bold;
+}
+
+tr {
+    border-spacing: 20px;
+}
+
+form li {
+    list-style: none
+}
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: white;
+    font-family: Montserrat;
+}
+
+.logo {
+    background-color: #FFFFFF;
+    cursor: pointer;
+    padding-bottom: 20px;
+}
+
+.logo a:hover {
+    border: none;
+    padding: 0;
+}
+
+header {
+    padding: 30px 5px;
+}
+
+.form-group label{
+    color:black;
+}
+.topnav {
+    overflow: hidden;
+    background-color: #FFFFFF;
+}
+
+.topnav a {
+    font-size: 16px;
+    color: #BF5300;
+    text-align: center;
+    padding: 0px 12px;
+    font-style: bold;
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+}
+
+.topnav a:hover {
+    background-color: blue;
+    border: 1px solid #FFFFFF;
+    padding: 5px;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+
+    .topnav a.icon {
+        float: left;
+        display: block;
+        /* margin-left: 100px; */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .topnav.responsive {
+        position: relative;
+        padding-bottom: 50px;
+    }
+
+    .topnav.responsive .icon {
+    
+        top: 145px;
+    }
+
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+        padding: 3px 0px;
+        /* margin-top: 5px; */
+    }
+
+    /* [class*="container"] {
+        width: 100%;
+    } */
+
+}
+
+body {
+    background-image: linear-gradient(90deg,
+            #59411C 20%,
+            #BF5300 80%);
+}
+
+body {
+    background-image: url("https://res.cloudinary.com/enema/image/upload/v1569485002/ClassBGLogin_l9dhub.png");
+}
+
+@media only screen and (min-width: 1200px) {
+    /* styles for wide screens */
+}
+
+@media only screen and (max-width: 320px) {
+    /* styles for narrow screens */
+}
+
+img.smallscreen {
+    display: none;
+}
+
+@media only screen and (max-width: 320px) {
+    img {
+        display: none;
+    }
+
+    img.smallscreen {
+        display: inline;
+    }
+}
+
+
+
+/*this is a footer*/
+footer {
+    /* position: absolute; */
+    text-align: center;
+    /* top: 900px; */
+    color: #ffffff;
+    background-color: #59411C;
+    /* float: center; */
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    margin: 0 auto;
+}

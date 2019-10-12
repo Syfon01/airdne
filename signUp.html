@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<head>
+  <title>Sign Up form</title>
+  <link rel="stylesheet" type="text/css" href="signup.css">
+
+  <!-- JavaScript Code -->
+  <script>
+    function myFunction() {
+      let x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+
+    function formValidate(event) {
+      event.preventDefault();
+      let fullName = document.querySelector("#fullName").value;
+      let username = document.querySelector("#username").value;
+      let pwd = document.querySelector("#pwd").value;
+      let pwd2 = document.querySelector("#pwd2").value;
+
+      // validating the Full Name
+      if (/^(?=.*[a-z])(?=.*[A-Z])(?=.{8,50})/.test(fullName) == false || fullName.split(" ").length < 2) {
+        let fullName_validate_text = "Full name must be at least eight characters with space(s) separating names";
+        document.querySelector("#fullName_validate").innerHTML = fullName_validate_text;
+      }
+      else {
+        document.querySelector("#fullName_validate").innerHTML = "";
+        console.log("Full name intial validation done");
+      }
+
+      // validating the username
+      if (/^((?=.*[a-z])(?=.*[_])(?=.*[A-Z])(?=.*[0-9]))|((?=.*[0-9])(?=.*[A-Z])(?=.*[_]))|((?=.*[0-9])(?=.*[_])(?=.*[a-z]))|((?=.*[_])(?=.*[a-z]))|((?=.*[0-9])(?=.*[_]))|((?=.*[_])(?=.*[A-Z]))|((?=.*[A-Z])|(?=.*[a-z]))|(?=.{4,10})/.test(username) == false || username.split(" ").length < 1) {
+        let username_validate_text = "Username must be between four (4) to nine (9) characters; only letters, numbers and underscores are allowed";
+        document.querySelector("#username_validate").innerHTML = username_validate_text;
+      }
+      else {
+        document.querySelector("#username_validate").innerHTML = "";
+        console.log("Username intial validation done");
+      }
+
+      // validating the password
+      if (/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&])(?=.{6,})/.test(pwd) == false) {
+        let pwd_validate_text = "Password must be at least eight (6) characters including lower and upper case letters, numbers and symbols";
+        document.querySelector("#pwd_validate").innerHTML = pwd_validate_text;
+      }
+      else {
+        document.querySelector("#pwd_validate").innerHTML = "";
+        console.log("Password intial validation done");
+      }
+
+      // validating confirm password
+      if (pwd2 != pwd) {
+        let pwd2_validate_text = "Passwords must match";
+        document.querySelector("#pwd2_validate").innerHTML = pwd2_validate_text;
+      }
+      else {
+        document.querySelector("#pwd2_validate").innerHTML = "";
+        console.log("Confirm password intial validation done");
+      }
+    }
+  </script>
+
+</head>
+<header>
+  <div class="header">
+    <div class="logo">
+      <a href="index.html"><img src="https://res.cloudinary.com/enema/image/upload/v1569433441/Ariadne_Class_pnlixb.png"
+          style="width: 110px;" alt="logo">
+      </a>
+    </div>
+    <div class="topnav" id="myTopnav">
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()"><img
+          src="https://res.cloudinary.com/siyfa/image/upload/v1568922461/ovqrbsa6t7nhghflejve.png" style="width: 30px;">
+      </a>
+      <a href="sign up.html">Login</a>
+      <a href="#">Contact Us</a>
+      <a href="#">FAQ</a>
+      <a href="#">Courses</a>
+      <a href="about-us.html">How it works</a>
+      <a href="class.html">Create Class</a>
+      <a href="#">Home</a>
+    </div>
+  </div>
+</header>
+
+<body>
+  <div>
+    <h2>Welcome to Ariadne Class, <br>enrol today and enjoy the definiation<br> of online education.</h2>
+  </div>
+
+  <!-- <form action="action_page.php" method="post" onsubmit="formValidate()"> -->
+  <form action="action_page.php" method="post" onsubmit="formValidate(event)">
+    <div class="imgcontainer">
+      <img src="https://res.cloudinary.com/enema/image/upload/v1569433441/Ariadne_Class_pnlixb.png" alt="Avatar"
+        class="avatar" height="100" width="50">
+    </div>
+
+    <div class="container">
+      <label for="FullName"><strong>Full name</strong></label>
+      <input type="text" placeholder="Enter Full Name" name="fullName" id="fullName" minlength="8"
+        title="Name can only contain letters" autofocus required>
+      <p id="fullName_validate" class="validate_text"></p>
+
+      <label for="username"><strong>Username</strong></label>
+      <input type="text" placeholder="Enter Username" name="username" id="username" minlength="4"
+        title="Username can only contain letters, numbers and underscore" required>
+      <p id="username_validate" class="validate_text"></p>
+
+      <label for="pwd"><strong>Password</strong></label>
+      <input type="password" placeholder="Enter Password" name="pwd" id="pwd" minlength="6"
+        title="Password must contain at least 6 characters that include lower and upper case letters with numbers and symbols"
+        required>
+      <p id="pwd_validate" class="validate_text"></p>
+
+      <label for="pwd2"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Confirm Password" name="pwd2" id="pwd2" title="Re-enter your password">
+      <p id="pwd2_validate" class="validate_text"></p>
+
+      <div class="coursegroup">
+        <select name="subjects" class="subjects" required>
+          <option value="">--Please choose a class--</option>
+          <option value="Web Development">Web Development</option>
+          <option value="Data Science">Data Science</option>
+          <option value="AI">Artificial Intelligence</option>
+          <option value="Machine Learning">Machine Learning</option>
+          <option value="Oracle DataBase">Oracle DataBase</option>
+          <option value="Cisco Networking">Cisco Networking</option>
+          <option value="RedHat Linux">RedHat Linux</option>
+          <option value="Digital Marketing">Digital Marketing</option>
+          <option value="Microsoft">Microsoft System Administration</option>
+        </select>
+        <input type="submit" id="button">
+        <label>
+          <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+      </div>
+
+      <div class="container" style="background-color:#f1f1f1">
+        <button type="button" class="cancelbtn">Cancel</button>
+        <span class="psw">Forgot <a href="#">password?</a></span>
+      </div>
+    </div>
+  </form>
+  <section>
+    <footer>
+      <img
+        src="https://res.cloudinary.com/enema/image/upload/v1569508194/screencapture-file-C-Users-pc-Desktop-TEAM-ARIADNE-HOMEPAGE-homepage-html-2019-09-25-21_51_33_vqmtxf.png"
+        width="100%">
+    </footer>
+  </section>
+</body>
+
+</html>
