@@ -226,7 +226,7 @@ header {
     }
 
     .topnav a.icon {
-        float: left;
+        float: right;
         display: block;
         /* margin-left: 100px; */
     }
