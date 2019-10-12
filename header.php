@@ -1,7 +1,7 @@
 <header>
 <div class="header">
     
-    <div class="topnav" id="myTopnav">
+    <div class="topnav py-2" id="myTopnav">
     <div class="logo">
     <a href="index.php"><img
         src="https://res.cloudinary.com/enema/image/upload/v1569433441/Ariadne_Class_pnlixb.png"
@@ -15,7 +15,7 @@ if (isset($_SESSION['login_success'])) {
 echo <<<_END
         <a href="index.php">Home</a>
         <a href="createclass.php">Create Class</a>
-        <a href="chooseCourse.html">Choose Course(s)</a>
+        <a href="FAQ.php">FAQ</a>
         <a href="contactus.php">Contact Us</a>
 _END;
 } else {
@@ -23,7 +23,7 @@ echo <<<_END
         <a href="index.php">Home</a>
         <a href="sign-up.php">Create An Account</a>
         <a href="login.php">Login</a>
-        <a href="chooseCourse.html">Choose Course(s)</a>
+        <a href="FAQ.php">FAQ</a>
         <a href="contactus.php">Contact Us</a>
 _END;
 }

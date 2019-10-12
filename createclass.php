@@ -114,10 +114,11 @@ mysqli_close($con);
     <title>Create Class</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="createclass.css" />
+    <link rel="stylesheet" type="text/css" href="css/topnav.css" />
+
 </head>
 
 <body>
-    <div class="container col-md-10 mx-auto mt-5">
 
         <header>
             <div class="header">
@@ -136,10 +137,11 @@ mysqli_close($con);
                 }
             </script>
         </header>
+    <div class="container ">
 
-        <form id="form" action="createclass.php" method="post" class="col-md-8 col-10 col-sm-10 mx-auto" enctype="multipart/form-data">
-            <h1>Create a class for your students</h1>
-            <h3 id="subheader">Enter the details about your class, courses and grades</h3>
+        <form id="form" action="createclass.php" method="post" class="content col-md-8 mx-auto mt-5 p-5 col-12 col-sm-12 " enctype="multipart/form-data">
+            <h2>Create a class for your students</h2>
+            <h4 id="subheader">Enter the details about your class, courses and grades</h4>
 
             <div>
                 <div id="error"><?php echo $error.$msg; ?></div>

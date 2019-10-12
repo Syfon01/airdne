@@ -119,6 +119,7 @@ img.avatar {
 span.psw {
   float: right;
   padding-top: 16px;
+  color:#f44336;
 }
 
 /* Change styles for span and cancel button on extra small screens */

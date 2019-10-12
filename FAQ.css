@@ -1,3 +1,13 @@
+body {
+  background-image: linear-gradient(90deg,
+      #59411C 20%,
+      #BF5300 80%);
+}
+
+body {
+  background-image: url("https://res.cloudinary.com/enema/image/upload/v1569485002/ClassBGLogin_l9dhub.png");
+}
+
 
 #accordion{
   margin-top: 5%;
@@ -5,9 +15,6 @@
   margin-left: 18%;
 }
 
-#myTopnav{
-  margin-top: 2%;
-}
 
 #accordion section p{
   display: none;
