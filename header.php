@@ -20,7 +20,8 @@ echo <<<_END
 _END;
 } else {
 echo <<<_END
-        <a href="Index.php">Home</a>
+        <a href="i
+        ndex.php">Home</a>
         <a href="sign-up.php">Create An Account</a>
         <a href="login.php">Login</a>
         <a href="chooseCourse.html">Choose Course(s)</a>
