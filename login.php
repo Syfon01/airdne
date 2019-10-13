@@ -2,42 +2,61 @@
   /* Process login form */
   $con = mysqli_connect('localhost', 'root', '6yt5^YT%') or die("Cannot connect to localhost");
 mysqli_select_db($con, 'classroom') or die("Cannot Select Database");
+/* Process login form */
 if (isset($_POST['submitLog'])) {
     // Get form data and store in variable
     $email = mysqli_real_escape_string($con, $_POST['email']);
     $password = mysqli_real_escape_string($con, $_POST['password']);
+
     // The password was encrypted by salting the inputed password
     $passwordHash = password_hash($password, PASSWORD_DEFAULT);
+
     // Validate user input
     if (empty($email) || empty($password)) { // Check if the form is empty
-        header('Location: index.php?err=warning &msg=Empty-field');
+        header('Location: index.php?err=danger &msg=empty-field');
         exit();
     } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) { // Validate user email
-        header('Location: index.php?err=danger &msg=Invalid-email');
+        header('Location: index.php?err=warning &msg=invalid-email');
         exit();
     } else {
         // Log in the user if no error
         $query = "SELECT * FROM users WHERE email = '$email'";
         $results = mysqli_query($con, $query);
-        $row = mysqli_num_rows($results);
+
         // Check if user is registered
-        if (!$row == 1) {
-            header('Location: index.php?err=danger &msg=User not found');
+        if (!mysqli_num_rows($results) == 1) {
+            header('Location: index.php?err=warning &msg=User does not exist');
             exit();
         } else {
-            if(!password_verify($password, $passwordHash)){
-                header('Location: index.php?err=danger &msg=Wrong password');
+           
+            while ($row = mysqli_fetch_assoc($results)) {
+                $pwdCheck = password_verify($password, $row['password']);
+                if ($pwdCheck == false) {
+                    header('Location: index.php?err=danger &msg=wrong-password');
+                    exit();
+                } elseif ($pwdCheck == true) {
+                    $id = $row['id'];
+                    $email = $row['email'];
+                    $firstname = $row['firstname'];
+
+                    session_start();
+                    $_SESSION['id'] = $id;
+                    $_SESSION['email'] = $email;
+                    $_SESSION['firstname'] = $firstname;
+
+                    header("location: creatclass.php?success");
+                } else {
+                header('Location: index.php?err=danger &msg=wrong-password');
                 exit();
-			} else {
-                session_start();
-				$id = $_SESSION['uid'];
-				$email = $_SESSION['email'];
-				header('location: createclass.php?err=success &msg=You logged in successfully');
             }
+            }
+
+          
         }
+
     }
 } else {
-    header('Location: index.php?err=warning &msg=Try again');
+    header('Location: index.php?try-again');
     exit();
 }
 ?>
