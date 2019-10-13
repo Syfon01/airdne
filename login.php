@@ -49,8 +49,6 @@ if (isset($_POST['submitLog'])) {
     $email = mysqli_real_escape_string($con, $_POST['email']);
     $password = mysqli_real_escape_string($con, $_POST['password']);
 
-    // The password was encrypted by salting the inputed password
-    $passwordHash = password_hash($password, PASSWORD_DEFAULT);
 
     // Validate user input
     if (empty($email) || empty($password)) { // Check if the form is empty
@@ -66,18 +64,22 @@ if (isset($_POST['submitLog'])) {
         $row = mysqli_num_rows($results);
 
         // Check if user is registered
-        if (!$row == 1) {
+       if (!$row == 1) {
             header('Location: index.php?err=danger &msg=User not found');
             exit();
         } else {
+            $fetch = mysqli_fetch_array($results);
+            $passwordHash = $fetch['password'];
+            $id = $fetch['id'];
+            $email = $fetch['email'];
             if(!password_verify($password, $passwordHash)){
                 header('Location: index.php?err=danger &msg=Wrong password');
                 exit();
 			} else {
                 session_start();
 
-				$id = $_SESSION['uid'];
-				$email = $_SESSION['email'];
+				$_SESSION['uid'] = $id;
+				$_SESSION['email'] = $email;
 
 				header('location: createclass.php?err=success &msg=You logged in successfully');
             }
