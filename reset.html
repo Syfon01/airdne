@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<head>
+    <title>Reset Password</title>
+    <link rel="stylesheet" type="text/css" href="reset.css">
+</head>
+<header>
+    <div class="header">
+        <div class="logo">
+            <a href="index.html"><img src="https://res.cloudinary.com/enema/image/upload/v1569433441/Ariadne_Class_pnlixb.png" style="width: 110px;" alt="logo">
+            </a>
+        </div>
+        <div class="topnav" id="myTopnav">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()"><img src="https://res.cloudinary.com/siyfa/image/upload/v1568922461/ovqrbsa6t7nhghflejve.png" style="width: 30px;">
+            </a>
+            <a href="login.html">Login</a>
+            <a href="signup.html">Create Account</a>
+            <a href="#">Contact Us</a>
+            <a href="#">FAQ</a>
+            <a href="#">Courses</a>
+            <a href="about-us.html">How it works</a>
+            <a href="class.html">Create Class</a>
+            <a href="#">Home</a>
+        </div>
+    </div>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+</header>
+
+<body></body>
+
+<div class="wrapper">
+    <form class="form-signin">
+        <tr>
+            <br>
+            <br>
+            <br>
+            <h1 class="form-signin-heading">Password Reset</h1>
+            <br>
+
+            </br>
+            <input type="text" class="form-control" name="Username" placeholder="Username" required="" autofocus="" />
+            </label>
+
+            <input type="text" class="form-control" name="Old Password" placeholder="Old Password" required="" autofocus="" />
+            </label>
+
+            <input type="text" class="form-control" name="New Password" placeholder="New Password" required="" autofocus="" />
+            </label>
+            </br>
+
+            <button class="btn btn-lg btn-primary btn-block" type="submit"><b>Reset</b></button>
+        </tr>
+    </form>
+</div>
+<footer>
+    <img src="https://res.cloudinary.com/enema/image/upload/v1569508194/screencapture-file-C-Users-pc-Desktop-TEAM-ARIADNE-HOMEPAGE-homepage-html-2019-09-25-21_51_33_vqmtxf.png" width="100%">
+</footer>
+</section>
+</body>
+
+</html>
