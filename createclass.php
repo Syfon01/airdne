@@ -108,13 +108,28 @@ mysqli_close($con);
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Create Class</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="createclass.css" />
-    <link rel="stylesheet" type="text/css" href="css/topnav.css" />
+  <title>Ariadne Class</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+
+  <link rel="stylesheet" href="css/aos.css">
+
+  <link rel="stylesheet" href="css/ionicons.min.css">
+
+  <link rel="stylesheet" href="css/flaticon.css">
+  <link rel="stylesheet" href="css/icomoon.css">
+  <link rel="stylesheet" href="css/style.css">    
+  <link rel="stylesheet" type="text/css" href="createclass.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="css/topnav.css" /> -->
 
 </head>
 
@@ -126,20 +141,11 @@ mysqli_close($con);
                 <?php
                 include "header.php"; ?>
             </div>
-            <script>
-                function myFunction() {
-                    var x = document.getElementById("myTopnav");
-                    if (x.className === "topnav") {
-                        x.className += " responsive";
-                    } else {
-                        x.className = "topnav";
-                    }
-                }
-            </script>
+            
         </header>
     <div class="container ">
 
-        <form id="form" action="createclass.php" method="post" class="content col-md-8 mx-auto mt-5 p-5 col-12 col-sm-12 " enctype="multipart/form-data">
+        <form id="form" action="createclass.php" method="post" class="content col-md-8 mx-auto my-5 p-5 col-12 col-sm-12 " enctype="multipart/form-data">
             <h2>Create a class for your students</h2>
             <h4 id="subheader">Enter the details about your class, courses and grades</h4>
 
@@ -292,9 +298,14 @@ mysqli_close($con);
 
     </div>
     <div>
-        <footer class="pt-3 mt-3">
-            <p>Copyright © 2019 All rights reserved | Team Ariadne</p>
-        </footer>
+        <header>
+            <div class="footer">
+
+                <?php
+                include "footer.php"; ?>
+            </div>
+            
+        </header>
     </div>
 
     <script type="text/javascript" src="createclass.js"></script>

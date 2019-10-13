@@ -117,22 +117,22 @@ input:valid {
 }
 
 button#uploadfile {
-    background-color: darkorange;
-    border-radius: 10px;
+    background-color: darkorange!important;
+    border-radius: 10px!important;
     cursor: pointer;
 }
 
 button#createbutton {
-    background-color: darkorange;
+    background-color: darkorange!important;
     /* width: 150px; */
     /* height: 40px; */
-    border-radius: 10px;
-    cursor: pointer;
+    border-radius: 10px!important;
+    cursor: pointer!important;
 }
 
 #createbutton:hover,
 #uploadfile:hover {
-    background-color: #4CAF50;
+    background-color: #4CAF50!important;
 }
 
 #createbutton,
@@ -211,15 +211,4 @@ img.smallscreen {
 
 
 /*this is a footer*/
-footer {
-    /* position: absolute; */
-    text-align: center;
-    /* top: 900px; */
-    color: #ffffff;
-    background-color: #59411C;
-    /* float: center; */
-    bottom: 0;
-    width: 100%;
-    height: 70px;
-    margin: 0 auto;
-}
+
