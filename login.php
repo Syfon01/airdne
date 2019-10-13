@@ -9,7 +9,9 @@ session_start();
 
 <head>
   <title>Sign Up form</title>
-  <link rel="stylesheet" type="text/css" href="css/signup.css">
+  <link rel="stylesheet" type="text/css" href="css/topnav.css">
+  <!-- <link rel="stylesheet" type="text/css" href="css/signup.css"> -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="login.css">
 </head>
 <header>
@@ -35,13 +37,12 @@ session_start();
   <br>
   <br>
   <br>
-  <br>
-  <br>
-  
 
-  <form action="" method="post">
-    <!-- <div class="imgcontainer">
-      <img src="https://res.cloudinary.com/enema/image/upload/v1569433441/Ariadne_Class_pnlixb.png" alt="Avatar" class="avatar" height="100" width="50">
+
+
+  <form action="" method="post" class="col-md-5 col-sm-12 ml-auto bg-white py-4">
+    <!-- <div class=" imgcontainer">
+    <img src="https://res.cloudinary.com/enema/image/upload/v1569433441/Ariadne_Class_pnlixb.png" alt="Avatar" class="avatar" height="100" width="50">
     </div> -->
     <div class="login_successful">
       <?php
@@ -51,7 +52,7 @@ session_start();
       }
       ?>
     </div>
-    <div class="wrapper ">
+    <div class=" ">
       <form class="form-signin ">
         <form action="action_page.php" method="post">
           <div class="imgcontainer">
@@ -73,8 +74,9 @@ session_start();
 
   </form>
   <section>
-    <footer>
-      <img src="https://res.cloudinary.com/enema/image/upload/v1569508194/screencapture-file-C-Users-pc-Desktop-TEAM-ARIADNE-HOMEPAGE-homepage-html-2019-09-25-21_51_33_vqmtxf.png" width="100%">
+    <footer class="mt-3 text-center pt-3">
+      <!--<img src="https://res.cloudinary.com/enema/image/upload/v1569508194/screencapture-file-C-Users-pc-Desktop-TEAM-ARIADNE-HOMEPAGE-homepage-html-2019-09-25-21_51_33_vqmtxf.png" width="100%">-->
+      <p>Copyright &copy; 2019 All Rights Reserved - Team Ariadne</p>
     </footer>
   </section>
 </body>
