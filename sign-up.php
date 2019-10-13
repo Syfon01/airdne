@@ -188,7 +188,7 @@ if ($con) {
       	<section class="ftco-section ftco-no-pt ftco-no-pb contact-section">
 			<div class="container">
 				<div class="row d-flex align-items-stretch no-gutters">
-					<div class="col-md-6 p-4 p-md-5 order-md-last bg-light">
+					<div class="col-md-12 p-4 p-md-5 order-md-last bg-light">
 						<form action="#">
               <div class="form-group">
                 <input type="text" class="form-control" name="fullname" id="fullname" placeholder="Fullname" value="<?php msg_toggle('fullname') ?>">
@@ -208,6 +208,11 @@ if ($con) {
               <div class="form-group">
                 <button type="submit" name='register' class="btn btn-primary py-3 px-5">Sign Up</button>
               </div>
+
+              <b>
+            <p> <a href="login.php">Already Have an Account? Signin </a></p>
+          </b>
+              
             </form>
 					</div>
 				</div>
