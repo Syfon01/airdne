@@ -2,14 +2,32 @@
 session_start();
 ?>
 
-
 <!DOCTYPE html>
 <html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+
 <head>
-  <title>Sign Up form</title>
-  <link rel="stylesheet" type="text/css" href="css/signup.css">
+  <title>Ariadne Class</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+
+  <link rel="stylesheet" href="css/aos.css">
+
+  <link rel="stylesheet" href="css/ionicons.min.css">
+
+  <link rel="stylesheet" href="css/flaticon.css">
+  <link rel="stylesheet" href="css/icomoon.css">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" type="text/css" href="login.css">
 </head>
 <header>
@@ -18,23 +36,14 @@ session_start();
     <?php
     include "header.php"; ?>
 
-  </div>
-  <script>
-    function myFunction() {
-      var x = document.getElementById("myTopnav");
-      if (x.className === "topnav") {
-        x.className += " responsive";
-      } else {
-        x.className = "topnav";
-      }
-    }
-  </script>
+
 </header>
 
 <body>
   <br>
   <br>
   <br>
+
   <br>
   <br>
   
@@ -89,9 +98,11 @@ if (isset($_POST['submitLog'])) {
 
 ?>
 
-  <form action="" method="post">
-    <!-- <div class="imgcontainer">
-      <img src="https://res.cloudinary.com/enema/image/upload/v1569433441/Ariadne_Class_pnlixb.png" alt="Avatar" class="avatar" height="100" width="50">
+
+
+  <form action="" method="post" class="col-md-5 col-sm-12 ml-auto bg-white py-4">
+    <!-- <div class=" imgcontainer">
+    <img src="https://res.cloudinary.com/enema/image/upload/v1569433441/Ariadne_Class_pnlixb.png" alt="Avatar" class="avatar" height="100" width="50">
     </div> -->
     <div class="login_successful">
     <?php if(isset($_GET['err'])) { ?>
@@ -101,7 +112,7 @@ if (isset($_POST['submitLog'])) {
   </div>
 <?php } ?> 
     </div>
-    <div class="wrapper ">
+    <div class=" ">
       <form class="form-signin ">
         <form action="" method="post">
           <div class="imgcontainer">
@@ -123,9 +134,10 @@ if (isset($_POST['submitLog'])) {
 
   </form>
   <section>
-    <footer>
-      <img src="https://res.cloudinary.com/enema/image/upload/v1569508194/screencapture-file-C-Users-pc-Desktop-TEAM-ARIADNE-HOMEPAGE-homepage-html-2019-09-25-21_51_33_vqmtxf.png" width="100%">
-    </footer>
+    <div class="footer">
+      <?php
+      include "footer.php"; ?>
+    </div>
   </section>
 </body>
 
