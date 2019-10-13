@@ -53,7 +53,7 @@
     <img src="https://res.cloudinary.com/enema/image/upload/v1569433441/Ariadne_Class_pnlixb.png" alt="Avatar" class="avatar" height="100" width="50">
     </div> -->
     <div class="login_successful">
-    <?php if(isset($_GET['err'])) { ?>
+       <?php if(isset($_GET['err'])) { ?>
   <div class="alert alert-dismissable alert-<?php echo $_GET['err']; ?>">
     <button data-dismiss="alert" class="close" type="button">x</button>
     <p><?php echo $_GET['msg']; ?></p>
@@ -67,13 +67,13 @@
             </a>
           </div>
           <h1 class="form-signin-heading ">Welcome</h1>
-          <form action="processlog.php" method="post" class="form-signin ">
+          <form action="./processlog.php" method="post" class="form-signin ">
           <input type="text" class="form-control" name="email" placeholder="Email Address" required="" autofocus="" />
           <input type="password" class="form-control" name="password" placeholder="Password" required="" />
           <label class="checkbox">
             <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe"> Remember me
           </label>
-          <button type="submit" name="submitLog" class="btn btn-warning">Login</button>
+              <input class="button" type="submit" name="submitLog" class="btn btn-warning" value="Log in">
           <b>
             <p> <a href="sign-up.php">Not a Member? Signup </a></p>
           </b>
