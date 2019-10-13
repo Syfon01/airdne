@@ -185,26 +185,35 @@ if ($con) {
         if (msg_toggle('emailerr')) echo "</br>";
         ?>
       </div>
-      <div class="container ">
-        <input type="text" name="fullname" id="fullname" placeholder="Fullname" value="<?php msg_toggle('fullname') ?>" autocomplete="off" class="box" /><br /><br />
-        <input type="text" name="username" id="username" placeholder="Username" value="<?php msg_toggle('username') ?>" autocomplete="off" class="box" /><br /><br />
-        <input type="text" name="email" id="email" placeholder="Email Address" value="<?php msg_toggle('email') ?>" autocomplete="off" class="box" /><br /><br />
-        <input type="password" name="password" id="password" placeholder="Password" class="box" /><br /><br />
-        <input type="password" name="password_confirm" id="password_confirm" placeholder="Confirm Password" class="box" /><br /><br />
-        <div class="coursegroup">
-          <button type="submit " name='register' value="Register" class='submit'>Sign Up</button>
-          <label>
-          </label>
-        </div>
-
-        <div class="text-center" style="">
-          <button type="button" class="cancelbtn">Cancel</button>
-          <span class="psw">Forgot <a href="#">password?</a></span>
-        </div>
-      </div>
-    </form>
-  </div>
-
+      	<section class="ftco-section ftco-no-pt ftco-no-pb contact-section">
+			<div class="container">
+				<div class="row d-flex align-items-stretch no-gutters">
+					<div class="col-md-6 p-4 p-md-5 order-md-last bg-light">
+						<form action="#">
+              <div class="form-group">
+                <input type="text" class="form-control" name="fullname" id="fullname" placeholder="Fullname" value="<?php msg_toggle('fullname') ?>">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" name="username" id="username" placeholder="Username" value="<?php msg_toggle('username') ?>">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" name="email" id="email" placeholder="Email Address" value="<?php msg_toggle('email') ?>">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" name="password" id="password" placeholder="Password">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" name="password_confirm" id="password_confirm" placeholder="Confirm Password">
+              </div>
+              <div class="form-group">
+                <button type="submit" name='register' class="btn btn-primary py-3 px-5">Sign Up</button>
+              </div>
+            </form>
+					</div>
+				</div>
+			</div>
+		</section>
+     
   <section>
     <div class="footer">
       <?php
