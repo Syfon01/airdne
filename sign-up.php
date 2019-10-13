@@ -211,6 +211,9 @@ if ($con) {
               <div class="form-group">
                 <button type="submit" name='register' class="btn btn-primary py-3 px-5">Sign Up</button>
               </div>
+              <b>
+            <p> <a href="login.php">Already have an Account? Signin </a></p>
+          </b>
             </form>
 					</div>
 				</div>
