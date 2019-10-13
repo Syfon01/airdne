@@ -196,7 +196,7 @@
             </p>
             <h3><a href="#">Electric Engineering</a></h3>
             <p>Separated they live in. A small river named Xyluz flows by their place and supplies it with the necessary regelialia. It is a paradisematic country</p>
-            <p><a href="login.php" class="btn btn-primary">Apply now</a></p>
+            <p><a href="sign-up.php" class="btn btn-primary">Apply now</a></p>
           </div>
         </div>
         <div class="col-md-3 course ftco-animate">
@@ -209,7 +209,7 @@
             </p>
             <h3><a href="#">Electric Engineering</a></h3>
             <p>Separated they live in. A small river named Xyluz flows by their place and supplies it with the necessary regelialia. It is a paradisematic country</p>
-            <p><a href="login.php" class="btn btn-primary">Apply now</a></p>
+            <p><a href="sign-up.php" class="btn btn-primary">Apply now</a></p>
           </div>
         </div>
         <div class="col-md-3 course ftco-animate">
@@ -222,7 +222,7 @@
             </p>
             <h3><a href="#">Electric Engineering</a></h3>
             <p>Separated they live in. A small river named Xyluz flows by their place and supplies it with the necessary regelialia. It is a paradisematic country</p>
-            <p><a href="login.php" class="btn btn-primary">Apply now</a></p>
+            <p><a href="sign-up.php" class="btn btn-primary">Apply now</a></p>
           </div>
         </div>
         <div class="col-md-3 course ftco-animate">
@@ -235,7 +235,7 @@
             </p>
             <h3><a href="#">Electric Engineering</a></h3>
             <p>Separated they live in. A small river named Xyluz flows by their place and supplies it with the necessary regelialia. It is a paradisematic country</p>
-            <p><a href="login.php" class="btn btn-primary">Apply now</a></p>
+            <p><a href="sign-up.php" class="btn btn-primary">Apply now</a></p>
           </div>
         </div>
       </div>
