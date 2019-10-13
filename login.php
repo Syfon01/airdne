@@ -31,6 +31,7 @@ session_start();
   <link rel="stylesheet" type="text/css" href="login.css">
 </head>
 <header>
+ <body>
   <div class="header">
 
     <?php
@@ -39,7 +40,7 @@ session_start();
 
 </header>
 
-<body>
+
 <?php
   /* Process login form */
   $con = mysqli_connect('localhost', 'root', '6yt5^YT%') or die("Cannot connect to localhost");
