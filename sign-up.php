@@ -203,10 +203,10 @@ if ($con) {
                 <input type="text" class="form-control" name="email" id="email" placeholder="Email Address" value="<?php msg_toggle('email') ?>">
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" name="password" id="password" placeholder="Password">
+                <input type="password" class="form-control" name="password" id="password" placeholder="Password">
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" name="password_confirm" id="password_confirm" placeholder="Confirm Password">
+                <input type="password" class="form-control" name="password_confirm" id="password_confirm" placeholder="Confirm Password">
               </div>
               <div class="form-group">
                 <button type="submit" name='register' class="btn btn-primary py-3 px-5">Sign Up</button>
