@@ -156,7 +156,8 @@ if ($con) {
 </header>
 
 <body>
-  <div class="container row ml-0">
+  <div class="container">
+  <div class="row">
     <div class="col-md-7 px-5 col-sm-12">
       <h2>Welcome to Ariadne Class, <br>Enrol today and enjoy the definition of online education.</h2>
     </div>
@@ -190,7 +191,7 @@ if ($con) {
       	
 			<div class="container">
 				<div class="row d-flex align-items-stretch no-gutters">
-					<div class="col-md-6 p-4 p-md-5 order-md-last bg-light">
+					<div class="col-md-12 p-4 p-md-5 order-md-last bg-light">
 
               <div class="form-group">
                 <input type="text" class="form-control" name="fullname" id="fullname" placeholder="Fullname" value="<?php msg_toggle('fullname') ?>">
@@ -214,7 +215,7 @@ if ($con) {
 					</div>
 				</div>
 			</div>
-		
+		</div>
      
   <section>
     <div class="footer">
