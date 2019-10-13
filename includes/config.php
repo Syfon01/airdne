@@ -7,7 +7,7 @@ define('dbhost', 'localhost');
 define('dbpass', '1111111111');
 define('dbname', 'id11033850_localhost');*/
 define('dbuser', 'root');
-define('dbpass', '');
+define('dbpass', '6yt5^YT%');
 define('dbname', 'classroom');
 
 // Connecting database
