@@ -40,14 +40,7 @@ session_start();
 </header>
 
 <body>
-  <br>
-  <br>
-  <br>
-
-  <br>
-  <br>
-  
-  <?php
+<?php
   /* Process login form */
   $con = mysqli_connect('localhost', 'root', '6yt5^YT%') or die("Cannot connect to localhost");
 mysqli_select_db($con, 'classroom') or die("Cannot Select Database");
@@ -97,6 +90,14 @@ if (isset($_POST['submitLog'])) {
 
 
 ?>
+  <br>
+  <br>
+  <br>
+
+  <br>
+  <br>
+  
+  
 
 
 
