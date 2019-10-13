@@ -61,19 +61,19 @@
 <?php } ?> 
     </div>
     <div class=" ">
-      <form class="form-signin ">
-        <form action="processlog.php" method="post">
+       
           <div class="imgcontainer">
             <img src="https://res.cloudinary.com/enema/image/upload/v1569433441/Ariadne_Class_pnlixb.png" style="width: 110px;" alt="logo">
             </a>
           </div>
           <h1 class="form-signin-heading ">Welcome</h1>
+          <form action="processlog.php" method="post" class="form-signin ">
           <input type="text" class="form-control" name="email" placeholder="Email Address" required="" autofocus="" />
           <input type="password" class="form-control" name="password" placeholder="Password" required="" />
           <label class="checkbox">
             <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe"> Remember me
           </label>
-          <button type="button" name="submitLog" class="btn btn-warning">Login</button>
+          <button type="submit" name="submitLog" class="btn btn-warning">Login</button>
           <b>
             <p> <a href="sign-up.php">Not a Member? Signup </a></p>
           </b>
