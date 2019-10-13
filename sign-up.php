@@ -2,7 +2,7 @@
 session_start();
 
 
-$con = mysqli_connect('localhost', 'root', '') or die("Cannot connect to localhost");
+$con = mysqli_connect('localhost', 'root', '6yt5^YT%') or die("Cannot connect to localhost");
 mysqli_select_db($con, 'classroom') or die("Cannot Select Database");
 //require 'includes/config.php';
 
