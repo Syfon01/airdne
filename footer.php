@@ -13,40 +13,14 @@
           </div>
         </div>
       </div>
-      <div class="col-md-6 col-lg-3">
-        <div class="ftco-footer-widget mb-5">
-          <h2 class="ftco-heading-2">Recent Blog</h2>
-          <div class="block-21 mb-4 d-flex">
-            <a class="blog-img mr-4" style="background-image: url(images/image_1.jpg);"></a>
-            <div class="text">
-              <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about</a></h3>
-              <div class="meta">
-                <div><a href="#"><span class="icon-calendar"></span> June 27, 2019</a></div>
-                <div><a href="#"><span class="icon-person"></span> Admin</a></div>
-                <div><a href="#"><span class="icon-chat"></span> 19</a></div>
-              </div>
-            </div>
-          </div>
-          <div class="block-21 mb-5 d-flex">
-            <a class="blog-img mr-4" style="background-image: url(images/image_2.jpg);"></a>
-            <div class="text">
-              <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about</a></h3>
-              <div class="meta">
-                <div><a href="#"><span class="icon-calendar"></span> June 27, 2019</a></div>
-                <div><a href="#"><span class="icon-person"></span> Admin</a></div>
-                <div><a href="#"><span class="icon-chat"></span> 19</a></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      
       <div class="col-md-6 col-lg-3">
         <div class="ftco-footer-widget mb-5 ml-md-4">
           <h2 class="ftco-heading-2">Links</h2>
           <ul class="list-unstyled">
             <li><a href="index.php"><span class="ion-ios-arrow-round-forward mr-2"></span>Home</a></li>
             <li><a href="FAQ.php"><span class="ion-ios-arrow-round-forward mr-2"></span>FAQ</a></li>
-            <li><a href="blog.html"><span class="ion-ios-arrow-round-forward mr-2"></span>Blog</a></li>
+<!--        <li><a href="blog.html"><span class="ion-ios-arrow-round-forward mr-2"></span>Blog</a></li> -->
             <!-- <li><a href=""><span class="ion-ios-arrow-round-forward mr-2"></span>Deparments</a></li> -->
             <li><a href="contact.html"><span class="ion-ios-arrow-round-forward mr-2"></span>Contact</a></li>
           </ul>
